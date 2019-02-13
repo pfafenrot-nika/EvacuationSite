@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Эвакуатор в Омске</title>
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="header">
+		<h1 class="header-title">Эвакуатор в Омске <span class="header-title__smaller">и Омской области</span></h1>
+		<div class="header-call">
+			<a class="header-call__number" href="tel:+79999999999">+7 (999) 999 99 99</a>
+			<span class="header-call__text">Просто позвоните!</span>
+		</div>
+		<a class="button header-button" href="#">Узнать цены</a>
+		<div class="header-advantages">
+			<ul>
+				<li class="header-advantages__item">Мы работаем по городу, области и регионам!</li>
+				<li class="header-advantages__item">Грузоподъемность до 3.5 тонн</li>
+				<li class="header-advantages__item">Сложные случаи</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="features">
+		<ul>
+			<li class="features-item features-">
+				<p>Работаем круглосуточно</p>
+			</li>
+			<li class="features-item features-">
+				<p>Быстрая подача эвакуатора</p>
+			</li>
+			<li class="features-item features-">
+				<p>Минимальные цены (от 600 руб)</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="calculate">
+		<h2 class="calculate-title">Рассчитать стоимость</h2>
+		<form action="#" class="calculate-form">
+			<div class="calculate-group">
+				<label for="type" class="calculate-group__label">Тип авто:</label>
+				<select id="type" class="calculate-group__field field-select" placeholder="Выберите из списка">
+					<option value="sedan">Седан</option>
+					<option value="hatchback">Хетчбек</option>
+					<option value="Minivan">Минивэн</option>
+					<option value="Suv">Внедорожник</option>
+					<option value="Other">Другое</option>
+				</select>
+			</div>
+			<div class="calculate-group">
+				<label for="weight" class="calculate-group__label">Масса:</label>
+				<input id="weight" type="text" class="calculate-group__field" placeholder="Введите массу в КГ">
+			</div>
+			<div class="calculate-group">
+				<label for="km1" class="calculate-group__label" value="0">Сколько км по городу?</label>
+				<input id="km1" type="text" class="calculate-group__field">
+			</div>
+			<div class="calculate-group">
+				<label for="km2" class="calculate-group__label" value="0">Сколько км межгород?</label>
+				<input id="km2" type="text" class="calculate-group__field">
+			</div>
+			<div class="calculate-group">
+				<label for="wheel" class="calculate-group__label">Заблокированные колеса:</label>
+				<select id="wheel" class="calculate-group__field field-select" placeholder="Выберите из списка">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="calculate-group">
+				<p class="calculate-group__label">Заблокирован руль?</p>
+				<input type="radio" name="rudder" class="calculate-group__field field-checkbox">Да
+				<input type="radio" name="rudder" class="calculate-group__field field-checkbox" checked>Нет
+			</div>
+			<p class="calculate-cost">Предварительная цена: 1650 руб.</p>
+			<input type="phone" class="calculate-group__field calculate-phone" placeholder="+7 (XXX) XXX XX XX">
+			<input type="submit" class="button calculate-button" value="Заказать эвакуатор">
+		</form>
+	</div>
+
+	<div class="price">
+		<h2 class="price-title">Прайс-лист</h2>
+		<table class="price-table">
+			<tr class="price-table__row">
+				<th class="price-table__title">Название</th>
+				<th class="price-table__title">Цена</th>
+			</tr>
+		</table>
+		<tr class="price-table__row">
+			<td class="price-table__name">Цена 1 км за городом (межгород)</td>
+			<td class="price-table__value">500 руб./км</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Простой по желанию/вине клиента 30 мин.</td>
+			<td class="price-table__value">700 руб.</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Переадресация конечного пункта доставки</td>
+			<td class="price-table__value">от 500 руб.</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Ложный вызов (от стоимости вызова)</td>
+			<td class="price-table__value">50%</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Сложная погрузка/выгрузка на эвакуатор</td>
+			<td class="price-table__value">от 800 руб.</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Выезд эвакуатора ночью</td>
+			<td class="price-table__value">+10%</td>
+		</tr>
+		<tr class="price-table__row">
+			<td class="price-table__name">Выезд эвакуатора при температуре ниже -25оС</td>
+			<td class="price-table__value">+15%</td>
+		</tr>
+	</div>
+
+	<div class="city-price">
+		<h2 class="city-price__title">Цена эвакуатора по городу</h2>
+		<ul>
+			<li class="city-price__item">
+				<img src="img/sedan.png" alt="sedan">
+				<p>от 600 руб</p>
+			</li>
+			<li class="city-price__item">
+				<img src="img/minivan.png" alt="minivan">
+				<p>от 1300 руб</p>
+			</li>
+			<li class="city-price__item">
+				<img src="img/jeep.png" alt="jeep">
+				<p>от 1500 руб</p>
+			</li>
+			<li class="city-price__item">
+				<img src="img/jeep.png" alt="jeep">
+				<p>от 600 руб</p>
+			</li>
+			<li class="city-price__item">
+				<img src="img/sedan.png" alt="sedan">
+				<p>от 1300 руб</p>
+			</li>
+			<li class="city-price__item">
+				<img src="img/minivan.png" alt="minivan">
+				<p>от 1500 руб</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="footer">
+		<div>
+			<a href="tel:+79999999999">+7 (999) 999 99 99</a>
+			<a href="mailto:shved_aleksander@mail.ru">shved_aleksander@mail.ru</a>
+		</div>
+		<div>
+			<p>ИП Швед О.А.</p>
+			<p>Омская обл., г.Омск</p>
+		</div>
+		<div>
+			Разработка сайта:
+			<a href="https://nika-pfafenrot.ru/">nika-pfafenrot.ru</a>
+		</div>
+	</div>
+</body>
+</html>

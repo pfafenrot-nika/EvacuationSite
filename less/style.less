@@ -1,0 +1,45 @@
+/* Colors */
+@white: #ffffff;
+@yellow: #fff15f;
+@orange: #fd4f10;
+@brown: #882b0a;
+@dark-brown: #641b01;
+
+/* fonts */
+.font(@weight: 400) {
+	font-family: myriad-pro, sans-serif;
+	font-style: normal;
+	font-weight: @weight;
+}
+
+
+/* Basic setting */
+html {
+	font-size: 10px;
+}
+body {
+	.font;
+}
+a:hover {
+	text-decoration: none;
+}
+input, a, textarea {
+	&:focus {
+		outline: none;
+	}
+}
+.button {
+	padding: 1rem 2.5rem;
+	border-radius: 8px;
+	font-size: 1.8rem;
+	background-color: @orange;
+	color: @white;
+	text-transform: uppercase;
+	border: none;
+	transition: all 0.2s;
+	&:hover {
+		cursor: pointer;
+		background-color: @yellow;
+		color: @dark-brown;
+	}
+}
